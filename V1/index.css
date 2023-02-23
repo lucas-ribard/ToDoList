@@ -1,0 +1,100 @@
+body{
+  
+    background-color: rgb(233, 247, 255);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+    color:rgb(43, 43, 151);
+    text-decoration: underline;
+}
+
+h2{
+    color:rgb(43, 43, 151);
+    text-decoration: underline;
+}
+
+
+.main{
+  background-color: rgb(208, 225, 235);
+  margin:5% 20% 0;
+  padding:3%;
+  border-radius: 10px;
+}
+
+p{
+margin-bottom: 50px;
+text-align: center;
+}
+
+li * {
+  float: left;  
+}
+li label{
+  color: rgb(46, 12, 110);
+  padding: 0 10px 0;
+}
+li, h3 {
+  clear:both;
+  list-style:none;
+ 
+}
+input, button {
+  outline: none;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(46, 12, 110);
+  padding: 5px;
+  border:0;
+  border-radius: 100px;
+}
+
+
+/* cache les textbox du mode edit*/
+ul li input[type=text] {
+  display:none;
+}
+
+ul li.editMode input[type=text] {
+  display:block;
+}
+
+ul li.editMode label {
+  display:none;
+}
+/*  -----------------------  */
+hr{
+  width: 50%;
+  border: 2px solid rgb(46, 12, 110);
+  border-radius: 10px;
+}
+
+#new-task{
+  margin: 0 20px 0 ;
+}
+
+.delete{
+  background-color: rgb(160, 22, 22);
+  margin: 0 10px 0 ;
+}
+
+.edit{
+  margin: 0 10px 0 ;
+}
+
+label{
+  font-size: x-large;
+  overflow-block:hidden;
+}
+
+#separation{
+  width: 100%;
+  border: 1px solid rgb(131, 72, 241);
+}
+
+input.checkbox{
+  width: 20px;
+  height: 20px;
+}
