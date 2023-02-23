@@ -32,8 +32,8 @@ function createNewTaskElement(task) {
     var br2 = document.createElement('br');
     var Ligne = document.createElement('hr');
    
-    var DateHour = runClock();
-    Date = document.createElement("date");
+    let DateHour = runClock();
+    let Date = document.createElement("date");
     Date.innerText = DateHour;
 
     //crée l'élément et le retourne
