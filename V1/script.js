@@ -12,9 +12,11 @@ function createNewTaskElement(task) {
     //si task n'est pas vide 
     if(task){
     var TaskElement = document.createElement("li");//nouvel élément de liste
+
     var checkBox = document.createElement("input");//input checkbox
     checkBox.type = "checkbox";//passe l'input en type checkbox
     checkBox.className = "checkbox";
+
     var label = document.createElement("label");//nom de la tache
     label.innerText = task; //ecrit la tache dans <label>
 
@@ -28,6 +30,7 @@ function createNewTaskElement(task) {
     var deleteButton = document.createElement("button");//bt suppr
     deleteButton.innerText = "Delete";
     deleteButton.className = "delete";
+    
     var br1 = document.createElement('br');
     var br2 = document.createElement('br');
     var Ligne = document.createElement('hr');
@@ -87,10 +90,8 @@ ButtonAdd.onclick = NouvelleTask;
 //supprimer une tache.
 function deleteTask() {
     console.log("Delete Task : ", this.parentNode.querySelector("label").innerText);
-    var listItem = this.parentNode;
-    var ul = listItem.parentNode;
     //Remove the parent list item from the ul.
-    ul.removeChild(listItem);
+    this.parentNode.parentNode.removeChild(this.parentNode);
 
 }
 

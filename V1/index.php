@@ -37,8 +37,10 @@
          
 
         </ul>
+        
         <br>
         <hr id="separation">
+
         <h3>Completed</h3>
         <ul id="completed-tasks">
             <!-- /////// EXEMPLE DE TACHE //// -->
